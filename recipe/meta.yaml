@@ -1,5 +1,5 @@
 {% set name = "setuptools-git-versioning" %}
-{% set version = "1.9.2" %}
+{% set version = "1.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/setuptools-git-versioning-{{ version }}.tar.gz
-  sha256: 3cee8ff9e73d2092f9e281a324a0a62c21e0cc66c233597c3d679f0b9cab0e40
+  sha256: 88c694accba404996223c4a8e42d2947a928474f1b5b6a56482fc32c9cdecdaf
 
 build:
   noarch: python
