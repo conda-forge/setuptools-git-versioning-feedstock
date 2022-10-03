@@ -1,5 +1,5 @@
 {% set name = "setuptools-git-versioning" %}
-{% set version = "1.10.1" %}
+{% set version = "1.11.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/setuptools-git-versioning-{{ version }}.tar.gz
-  sha256: a68f2cd6d261503750fe600ba3c533440c57c1801ed743175c387e9b3e80f44e
+  sha256: c4c083cf7ab3fca54f73f096b7cb07aa7bdc479df0b4adaad8f1519c4a39b812
 
 build:
   noarch: python
@@ -16,12 +16,14 @@ build:
 
 requirements:
   host:
+    - deprecated
     - packaging
     - pip
     - python >=3.7
     - setuptools
     - toml >=0.10.2
   run:
+    - deprecated
     - packaging
     - python >=3.7
     - setuptools
