@@ -21,7 +21,7 @@ requirements:
     - python >=3.7
     - setuptools
     - toml >=0.10.2
-  run:R
+  run:
     - packaging
     - python >=3.7
     - setuptools
