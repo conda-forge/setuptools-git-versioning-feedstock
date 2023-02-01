@@ -16,14 +16,12 @@ build:
 
 requirements:
   host:
-    - deprecated
     - packaging
     - pip
     - python >=3.7
     - setuptools
     - toml >=0.10.2
-  run:
-    - deprecated
+  run:R
     - packaging
     - python >=3.7
     - setuptools
