@@ -1,11 +1,11 @@
-About setuptools-git-versioning
-===============================
+About setuptools-git-versioning-feedstock
+=========================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/setuptools-git-versioning-feedstock/blob/main/LICENSE.txt)
 
 Home: https://setuptools-git-versioning.readthedocs.io
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/setuptools-git-versioning-feedstock/blob/main/LICENSE.txt)
 
 Summary: Use git repo data for building a version number according PEP-440
 
