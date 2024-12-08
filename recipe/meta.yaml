@@ -6,24 +6,24 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/setuptools-git-versioning-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/setuptools-git-versioning-{{ version }}.tar.gz
   sha256: 85b5fbe7bda8e9c24bbd9e587a9d4b91129417f4dd3e11e3c0d5f3f835fc4d4d
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - packaging
     - pip
-    - python >=3.7
+    - python {{ python_min }}
     - setuptools
     - toml >=0.10.2
   run:
     - packaging
-    - python >=3.7
+    - python >={{ python_min }}
     - setuptools
     - toml >=0.10.2
 
@@ -34,6 +34,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://setuptools-git-versioning.readthedocs.io
