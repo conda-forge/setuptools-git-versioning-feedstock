@@ -1,18 +1,18 @@
 {% set name = "setuptools-git-versioning" %}
-{% set version = "2.0.0" %}
+{% set version = "2.1.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/setuptools-git-versioning-{{ version }}.tar.gz
-  sha256: 85b5fbe7bda8e9c24bbd9e587a9d4b91129417f4dd3e11e3c0d5f3f835fc4d4d
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 6aef5b8bb1cfb953b6b343d27cbfc561d96cf2a2ee23c2e0dd3591042a059921
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -20,12 +20,12 @@ requirements:
     - pip
     - python {{ python_min }}
     - setuptools
-    - toml >=0.10.2
+    - tomli >=2.0.1
   run:
     - packaging
     - python >={{ python_min }}
     - setuptools
-    - toml >=0.10.2
+    - tomli >=2.0.1
 
 test:
   imports:
