@@ -1,13 +1,13 @@
 {% set name = "setuptools-git-versioning" %}
-{% set version = "3.1.0" %}
+{% set version = "3.2.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 612dfcf184addac9e1c2216f4f229724b2390e5bf613fb925ae80b84f2529172
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 27aa1ad0409b632ee49947ea592cc27e16fbb2a1605cc22efeb7c353fd790b31
 
 build:
   noarch: python
