@@ -1,5 +1,5 @@
 {% set name = "setuptools-git-versioning" %}
-{% set version = "3.2.0" %}
+{% set version = "3.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 27aa1ad0409b632ee49947ea592cc27e16fbb2a1605cc22efeb7c353fd790b31
+  sha256: 8cccd352642ed6435da35b8edaf56a2f764f061ef2edaf3ae6602806acc7105f
 
 build:
   noarch: python
